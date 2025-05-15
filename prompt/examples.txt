@@ -1,0 +1,63 @@
+Example1
+
+DOCUMENTS: 
+Document [1] (Title: Super Bowl LVII) Super Bowl LVII was an American football game played to determine the champion of the National Football League (NFL) for the 2022 season. 
+Document [2] (Title: Super Bowl LVII Results) The American Football Conference (AFC) champion Kansas City Chiefs defeated the National Football Conference (NFC) champion Philadelphia Eagles, 38–35. The game was played on February 12, 2023, at State Farm Stadium in Glendale, Arizona. It was the fourth Super Bowl hosted by the Phoenix metropolitan area, and the third at this venue, after Super Bowls XLII in 2008 and XLIX in 2015 when it was known as University of Phoenix Stadium.
+Document [3] (Title: Kansas City Chiefs) The Kansas City Chiefs are an American football team based in Kansas City, Missouri. The Chiefs compete in the National Football League (NFL) as a member of the American Football Conference (AFC) West division.
+Document [4] (Title: Mascot of Chiefs) Since 1989 the cartoon-like K. C. Wolf, portrayed by Dan Meers in a wolf costume, has served as the team's mascot. The mascot was named after the Chiefs' "Wolfpack", a group of rabid fans from the team's days at Municipal Stadium. K. C. Wolf is one of the most popular NFL mascots and was the league's first mascot inducted into the Mascot Hall of Fame in 2006.
+
+MAIN_QUESTION: What is the mascot name of the 2022 Super Bowl winning team?
+
+SUB_QUESTIONS: 
+SUB_Q1: Which team won the 2022 Super Bowl?
+SUB_Q2: What is the name of that team’s mascot?
+
+REASONING_CHAIN:
+[[Super Bowl LVII, was for, 2022 season], [Kansas City Chiefs, won, Super Bowl LVII], [<UNCERTAIN>, mascot, <FILL>]]
+
+Complete Reasoning Chain: [[Super Bowl LVII, was for, 2022 season], [Kansas City Chiefs, won, Super Bowl LVII], [Kansas City Chiefs, mascot, K. C. Wolf]]
+Generated Answer: <<ANS>>K. C. Wolf<<ANS>>
+
+
+Example2
+
+DOCUMENTS: 
+Document [1] (Title: Nash equilibrium) Nash equilibrium is named after American mathematician John Forbes Nash Jr. The same idea was used in a particular application in 1838 by Antoine Augustin Cournot in his theory of oligopoly. In Cournot's theory, each of several firms choose how much output to produce to maximize its profit. The best output for one firm depends on the outputs of the others. A Cournot equilibrium occurs when each firm's output maximizes its profits given the output of the other firms, which is a pure-strategy Nash equilibrium. Cournot also introduced the concept of best response dynamics in his analysis of the stability of equilibrium. Cournot did not use the idea in any other applications, however, or define it generally.
+Document [2] (Title: John Forbes Nash Jr.) John Forbes Nash, Jr. (June 13, 1928 – May 23, 2015), known and published as John Nash, was an American mathematician who made fundamental contributions to game theory, real algebraic geometry, differential geometry, and partial differential equations. 
+Document [3] (Title: Life of John Nash) Nash's life was the subject of Sylvia Nasar's 1998 biographical book A Beautiful Mind, and his struggles with his illness and his recovery became the basis for a film of the same name directed by Ron Howard.
+Document [4] (Title: A Beautiful Mind (film)) A Beautiful Mind is a 2001 American biographical drama film about the mathematician John Nash, a Nobel Laureate in Economics, played by Russell Crowe. The film is directed by Ron Howard based on a screenplay by Akiva Goldsman, who adapted the 1998 biography by Sylvia Nasar.
+
+MAIN_QUESTION: Who is the lead actor in the movie starring someone who discovered Nash equilibrium?
+
+SUB_QUESTIONS:
+SUB_Q1: Who discovered the Nash equilibrium?
+SUB_Q2: What movie features the person who discovered the Nash equilibrium?
+SUB_Q3: Who is the lead actor in that movie?
+
+REASONING_CHAIN:
+[[Nash equilibrium, discovered by, John Nash], [<UNCERTAIN>, features, John Nash], [A Beautiful Mind, lead actor, <FILL>]]
+
+Complete Reasoning Chain: [[Nash equilibrium, discovered by, John Nash], [A Beautiful Mind, features, John Nash], [A Beautiful Mind, lead actor, Russell Crowe]]
+Generated Answer: <<ANS>>Russell Crowe<<ANS>>
+
+
+Example3
+
+DOCUMENTS: 
+Document [1] (Title: 2022 FIFA World Cup) The 2022 FIFA World Cup was the 22nd FIFA World Cup, the quadrennial world championship for national football teams organized by FIFA. It took place in Qatar from 20 November to 18 December 2022, after the country was awarded the hosting rights in 2010.
+Document [2] (Title: Champions of 2022 FIFA World Cup) Argentina was crowned the champions after winning the final against the title holder France 4–2 on penalties following a 3–3 draw after extra time. It was Argentina's third title and their first since 1986, as well as being the first nation from outside of Europe to win the tournament since 2002.
+Document [3] (Title: Argentina national football team) The Argentina national football team, nicknamed La Albiceleste ('The White and Sky Blue'), represents Argentina in men's international football and is administered by the Argentine Football Association, the governing body for football in Argentina. In 2022, captained by Messi, they were crowned world champions for the third time, the fourth-most of any country, beating France 4–2 on penalties, following a 3–3 draw after extra time.
+Document [4] (Title: Lionel Messi) Lionel Andrés Messi also known as Leo Messi, is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national team. Born in Rosario, Argentina, Messi relocated to Spain to join Barcelona at age 13, and made his competitive debut at age 17 in October 2004.
+
+MAIN_QUESTION: Which team did the captain of the 2022 FIFA World Cup champions debut?
+
+SUB_QUESTIONS:
+SUB_Q1: Which team won the 2022 FIFA World Cup?
+SUB_Q2: Who was the captain of that team?
+SUB_Q3: Which team did that captain debut for?
+
+REASONING_CHAIN:
+[[Argentina, won, 2022 FIFA World Cup], [Lionel Messi, was captain of, <UNCERTAIN>], [Lionel Messi, made competitive debut for, <FILL>]]
+
+Complete Reasoning Chain: [[Argentina, won, 2022 FIFA World Cup], [Lionel Messi, was captain of, Argentina], [Lionel Messi, made competitive debut for, Barcelona]]
+Generated Answer: <<ANS>>Barcelona<<ANS>>
