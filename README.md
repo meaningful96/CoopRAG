@@ -24,7 +24,6 @@ We have applied question unrolling to the HotpotQA, MuSiQue, 2WikiMultihopQA, an
 - HotpotQA, MuSiQue, 2WikiMultihopQA are from [HippoRAG](https://github.com/OSU-NLP-Group/HippoRAG)
 - NaturalQuestions (NQ) is from [REAL](https://github.com/RUCAIBox/REAR)
 
-Download the datasets in here. We also provide preprocessed full test sets.
 -  We have standardized the structure of all datasets to match the original **MuSiQue** dataset.
 ```python
 Data = [
