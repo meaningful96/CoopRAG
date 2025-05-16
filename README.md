@@ -1,8 +1,4 @@
 # Cooperative Retrieval-Augmented Generation for Question Answering: Mutual Information Exchange and Ranking by Contrasting Layers (CoopRAG) 
-<p align="center">
-<img width="1000" alt="1" src="https://github.com/user-attachments/assets/8b4089f4-07c2-40ac-a119-3082493b9c0d">
-</p>
-
 
 We used 2 A6000 GPU
 
@@ -52,11 +48,6 @@ Data = [
 </details> 
 
 # Unrolling-Augmented Generation with RaLa
-
-<p align="center">
-<img width="800" alt="1" src="https://github.com/user-attachments/assets/a107c59a-2bf0-43db-ae30-d40cc4d889f7">
-</p>
-
 
 ## Training
 
