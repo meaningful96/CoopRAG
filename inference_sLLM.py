@@ -173,7 +173,7 @@ example1 = read_file(prompt_examples[0])
 example2 = read_file(prompt_examples[1])
 
 nltk.download('punkt')
-model_name =  "/home/huggingface/models--google--gemma-2-9b-it/snapshots/checkpoint"  
+model_name = "google/gemma-2-9b-it"
 
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(
