@@ -17,6 +17,8 @@ We used 2 A6000 GPU
 
 ```bash
 pip install -r requirements.txt
+
+export OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
 ```
 
 # Datasets Download
@@ -47,7 +49,17 @@ Data = [
 ```
 <details>
   <summary>Question Unrolling</summary>
-  - Currently optimizing the code (adding parameters, etc.).
+  - Using GPT-4o-mini
+ 
+  ```bash
+  export OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
+
+  CUDA_VISIBLE_DEVICES=0 python3 unrolling_GPT.py
+  ```
+  - Using sLLM (Gemma-2-9B)
+  ```bash
+  CUDA_VISIBLE_DEVICES=0 python3 unrolling_sLLM.py
+  ```
 
 </details> 
 
