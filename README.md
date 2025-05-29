@@ -49,15 +49,14 @@ Data = [
 ```
 <details>
   <summary>Question Unrolling</summary>
- - Using GPT-4o-mini
  
+ - Using GPT-4o-mini
  ```bash
  export OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
 
  CUDA_VISIBLE_DEVICES=0 python3 unrolling_GPT.py
  ```
  - Using sLLM (Gemma-2-9B)
- 
  ```bash
  CUDA_VISIBLE_DEVICES=0 python3 unrolling_sLLM.py
  ```
