@@ -22,9 +22,9 @@ export OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
 ```
 
 # Datasets Download
-We have applied question unrolling to the HotpotQA, MuSiQue, 2WikiMultihopQA, and NaturalQuestions (NQ) datasets. You can download the preprocessed datasets in [here]().
-- HotpotQA, MuSiQue, 2WikiMultihopQA are from [HippoRAG](https://github.com/OSU-NLP-Group/HippoRAG)
-- NaturalQuestions (NQ) is from [REAL](https://github.com/RUCAIBox/REAR)
+We have applied question unrolling to the HotpotQA, MuSiQue, 2WikiMultihopQA, and NaturalQuestions (NQ) datasets. You can download the preprocessed datasets in here.
+- HotpotQA, MuSiQue, 2WikiMultihopQA are from HippoRAG
+- NaturalQuestions (NQ) is from REAL.
 
 -  We have standardized the structure of all datasets to match the original **MuSiQue** dataset.
 ```python
