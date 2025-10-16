@@ -1,0 +1,61 @@
+Example 1
+DOCUMENTS:
+Document [1] (Title: Super Bowl LVII) Super Bowl LVII was an American football game played to determine the champion of the National Football League (NFL) for the 2022 season.
+Document [2] (Title: Super Bowl LVII Results) The American Football Conference (AFC) champion Kansas City Chiefs defeated the National Football Conference (NFC) champion Philadelphia Eagles, 38–35. The game was played on February 12, 2023, at State Farm Stadium in Glendale, Arizona.
+Document [3] (Title: Kansas City Chiefs) The Kansas City Chiefs are an American football team based in Kansas City, Missouri.
+Document [4] (Title: Mascot of Chiefs) Since 1989 the cartoon-like K. C. Wolf, portrayed by Dan Meers in a wolf costume, has served as the team's mascot.
+
+MAIN_QUESTION:
+What is the mascot name of the 2022 Super Bowl winning team?
+
+SUB_QUESTIONS:
+SUB_Q1: Which team won the 2022 Super Bowl?
+SUB_Q2: What is the name of that team’s mascot?
+
+REASONING_CHAIN:
+[["Super Bowl LVII", "was for", "2022 season"], ["Kansas City Chiefs", "won", "Super Bowl LVII"], ["Kansas City Chiefs", "mascot", "<FILL>"]]
+
+Complete Reasoning Chain:
+[["Super Bowl LVII", "was for", "2022 season"], ["Kansas City Chiefs", "won", "Super Bowl LVII"], ["Kansas City Chiefs", "mascot", "K. C. Wolf"]]
+
+Example 2
+DOCUMENTS:
+Document [1] (Title: 2022 FIFA World Cup) The 2022 FIFA World Cup took place in Qatar.
+Document [2] (Title: Champions of 2022 FIFA World Cup) Argentina was crowned the champions after winning against France.
+Document [3] (Title: Argentina national football team) Argentina was captained by Messi during the 2022 World Cup.
+Document [4] (Title: Lionel Messi) Messi made his competitive debut for Barcelona.
+
+MAIN_QUESTION:
+Which team did the captain of the 2022 FIFA World Cup champions debut?
+
+SUB_QUESTIONS:
+SUB_Q1: Which team won the 2022 FIFA World Cup?
+SUB_Q2: Who was the captain of that team? SUB_Q3: Which team did that captain debut for?
+
+REASONING_CHAIN:
+[["Argentina", "won", "2022 FIFA World Cup"], ["Lionel Messi", "was captain of", "Argentina"], ["Lionel Messi", "made competitive debut for", "<FILL>"]]
+
+Complete Reasoning Chain:
+[["Argentina", "won", "2022 FIFA World Cup"], ["Lionel Messi", "was captain of", "Argentina"], ["Lionel Messi", "made competitive debut for", "Barcelona"]]
+
+Example 3
+DOCUMENTS:
+Document [1] (Title: 2022 FIFA World Cup) The 2022 FIFA World Cup took place in Qatar.
+Document [2] (Title: Champions of 2022 FIFA World Cup) Argentina was crowned the champions after winning against France.
+Document [3] (Title: Argentina national football team) Argentina was captained by Messi during the 2022 World Cup.
+Document [4] (Title: Lionel Messi) Messi made his competitive debut for Barcelona.
+
+MAIN_QUESTION:
+Which team did the captain of the 2022 FIFA World Cup champions debut?
+
+SUB_QUESTIONS:
+SUB_Q1: Which team won the 2022 FIFA World Cup?
+SUB_Q2: Who was the captain of that team?
+SUB_Q3: Which team did that captain debut for?
+
+REASONING_CHAIN:
+[["Argentina", "won", "2022 FIFA World Cup"], ["Lionel Messi", "was captain of", "Argentina"], ["Lionel Messi", "made competitive debut for", "<FILL>"]]
+
+Complete Reasoning Chain:
+[["Argentina", "won", "2022 FIFA World Cup"], ["Lionel Messi", "was captain of", "Argentina"], ["Lionel Messi", "made competitive debut for", "Barcelona"]]
+
