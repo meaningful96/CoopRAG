@@ -79,54 +79,6 @@ def rerank_top_docs_avgmaxsim(query: str, doc_list: List[str],
     scored_list = sorted(zip(doc_list, sims), key=lambda x: x[1], reverse=True)
     return [d for d, _ in scored_list[:topn]]
 
-
-def rerank_top_docs_avgmaxsim_mmr(query: str, doc_list: List[str],
-                              predictor: BasePredictor, tokenizer,
-                              device='cuda', topn=5):
-    lambda_val = 0.5
-    total_docs = len(doc_list)
-    
-    # Compute query-document similarity for all docs at once
-    enc_q = tokenizer([query] * total_docs, padding=True, truncation=True,
-                      max_length=args.max_seq_length, return_tensors="pt").to(device)
-    enc_d = tokenizer(doc_list, padding=True, truncation=True,
-                      max_length=args.max_seq_length, return_tensors="pt").to(device)
-    with torch.no_grad():
-        qd_score_mat = predictor.calc_avg_maxsim(enc_q["input_ids"], enc_q["attention_mask"],
-                                                 enc_d["input_ids"], enc_d["attention_mask"])
-    # Assume output shape (total_docs, 1)
-    q_sims = [s[0] for s in qd_score_mat.cpu().tolist()]
-    
-    # Compute document-document similarity matrix in one call
-    enc_docs = tokenizer(doc_list, padding=True, truncation=True,
-                         max_length=args.max_seq_length, return_tensors="pt")
-    for k in enc_docs:
-        enc_docs[k] = enc_docs[k].to(device)
-    with torch.no_grad():
-        doc_sim_matrix = predictor.calc_avg_maxsim(enc_docs["input_ids"], enc_docs["attention_mask"],
-                                                   enc_docs["input_ids"], enc_docs["attention_mask"])
-    # Assume output shape (total_docs, total_docs)
-    sim_matrix = doc_sim_matrix.cpu().tolist()
-    
-    # MMR selection
-    selected_indices = []
-    candidate_indices = list(range(total_docs))
-    while len(selected_indices) < topn and candidate_indices:
-        mmr_scores = []
-        for idx in candidate_indices:
-            score_query = q_sims[idx]
-            if selected_indices:
-                max_sim = max(sim_matrix[idx][s_idx] for s_idx in selected_indices)
-            else:
-                max_sim = 0.0
-            mmr = lambda_val * score_query - (1 - lambda_val) * max_sim
-            mmr_scores.append((idx, mmr))
-        best_idx, _ = max(mmr_scores, key=lambda x: x[1])
-        selected_indices.append(best_idx)
-        candidate_indices.remove(best_idx)
-    
-    return [doc_list[idx] for idx in selected_indices]
-
 def preprocess_doc(title_str: str, para_str: str) -> str:
     title_str = title_str.strip()
     para_str = para_str.strip()
