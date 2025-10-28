@@ -3,7 +3,7 @@
 - **Author**: Youmin Ko, Sungjong Seo, Hyunjoon Kim
 
 <p align="center">
-<img width="1000" alt="1" src="https://github.com/user-attachments/assets/8b4089f4-07c2-40ac-a119-3082493b9c0d">
+<img width="1000" alt="1" src="https://github.com/meaningful96/CoopRAG/blob/main/images/overview.png?raw=true">
 </p>
 
 ## Requirments
@@ -62,7 +62,7 @@ Data = [
 ## Unrolling-Augmented Generation with RaLa
 
 <p align="center">
-<img width="800" alt="1" src="https://github.com/user-attachments/assets/a107c59a-2bf0-43db-ae30-d40cc4d889f7">
+<img width="800" alt="1" src="https://github.com/meaningful96/CoopRAG/blob/main/images/RaLa.png?raw=true">
 </p>
 
 ### Training
