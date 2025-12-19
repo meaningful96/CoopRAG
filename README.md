@@ -25,6 +25,9 @@ export OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
 ```
 
 ## Dataset Download
+
+🤗 I Uploaded all of preprocessed datasets on Huggingface [meaningful96/CoopRAG](https://huggingface.co/datasets/meaningful96/CoopRAG) 🤗 
+
 We have applied question unrolling to the HotpotQA, MuSiQue, 2WikiMultihopQA, and NaturalQuestions (NQ) datasets.
 - You can download the **preprocessed datasets in [here](https://drive.google.com/drive/folders/1J_WEkw93nd_bgvoqRWYTCSs13D33MUBa?usp=sharing)**
 - HotpotQA, MuSiQue, 2WikiMultihopQA are from HippoRAG
