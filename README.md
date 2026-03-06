@@ -7,8 +7,8 @@
 </p>
 
 ## Requirments
-We used 2 A6000(VRAM: 48GB) GPU 
-
+We used 2 A6000(VRAM: 48GB) GPU
+- python 3.10
 - torch==2.4.1
 - transformers==4.46.1
 - torchvision==0.1.1
@@ -70,13 +70,13 @@ Data = [
 
 ### Training
 
-- Run `./scripts/{Datasets}.sh` file
-- Datasets: `hotpotqa`, `2wikimultihop`, `musique`, `nq.sh`
+- Run `./scripts/train_{Datasets}.sh` file
+- Datasets: `hotpot`, `2wikimultihop`, `musique`, `nq.sh`
 ```bash
 cd RaLa
 
 # HotpotQA
-CUDA_VISIBLE_DEVICES=0,1 bash scripts/hotpotqa.sh
+CUDA_VISIBLE_DEVICES=0,1 bash scripts/train_hotpot.sh
 ```
 
 ### Evaluation and Retrieve top-k Documents
