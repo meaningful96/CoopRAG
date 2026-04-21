@@ -104,3 +104,14 @@ This protocol enables consistent, automatic evaluation for short, fact-seeking q
 ```bash
 python3 factchecking.py --dataset hotpotqa
 ```
+
+# Citation
+```bibtex
+@inproceedings{ko2025cooprag,
+  author    = {Ko, Youmin and Seo, Sungjong and Kim, Hyunjoon},
+  title     = {Cooperative Retrieval-Augmented Generation for Question Answering: Mutual Information Exchange and Ranking by Contrasting Layers},
+  booktitle = {Proceedings of the 39th Conference on Neural Information Processing Systems},
+  year      = {2025},
+  url       = {https://openreview.net/forum?id=52ab19e0ce1e465d8756bd720c363a39a11a8fb5}
+}
+```
